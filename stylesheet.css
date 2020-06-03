@@ -1,0 +1,40 @@
+body{
+    background-color: white;
+}
+
+.header{
+    display: inline-flex;
+    text-align: center;
+    margin:0;
+    background-color: goldenrod;
+    box-shadow: 2px 2px 8px black;
+    height: 80px;
+    width: 100%;
+    color:black;
+    padding-top:15px;
+    padding-left:10px;
+}
+
+#introduction{
+    margin:20px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.nav{
+    height:100px;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.items ol li a{
+    color: black;
+}
+
+.items ol li a:hover{
+    color:red;
+    font-weight:bold;
+}
+
+
+
