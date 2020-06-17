@@ -16,122 +16,35 @@ body{
     padding-top:15px;
     padding-left:25px;
     z-index: 99;
+    
 }
 
-#introduction{
-    margin-left:5rem;
-    padding: 5px;
-    font-size: 17px;
-    float: right;
-
+.banner{
+    position:relative;
 }
 
-.navbar{
-    position: fixed;
-    background-color:goldenrod;
-    transition: width 200ms ease;
-    box-shadow: 2px 2px 8px black;
-    z-index: -1;
-}
-
-.navbar-nav{
-    list-style: none;
-    padding:0;
-    margin:0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left:-15px;
-}
-
-.nav-item{
+.text{
+    position: absolute;
+    top:50%;
     width:100%;
-}
-
-.na-link{
-    display:flex;
-    align-items: center;
-    height: 5rem;
-    color: white;
-    text-decoration: none;
-}
-
-.link-text{
-    display:none;
-    margin-left: 1rem;
-    color: black;
     text-align: center;
-}
-
-.nav-link svg{
-    min-width: 2rem;
-    margin: 0 1.5rem;
-    padding-right: 10px;
-    color:black;
-}
+}    
+    
 
 
-.navbar .navbar-nav .nav-item{
-    max-width: 128px;
-}
+ .nav{
 
+    background-color: goldenrod !important;
+    box-shadow: 2px 2px 8px black;
+    min-height: 80px;
 
-@media only screen and (max-width:600px){
-    .navbar{
-        bottom: 0;
-        width: 100vw;
-        height:5rem;
-        transition: width 200ms ease;
-    }
-
-    .navbar-nav{
-        flex-direction: row;
-        margin-left:0px;
-    }
-
-    .nav-link{
-        justify-content:center;
-
-    }
-
-    .navbar-nav li{
-        margin-left: 30px;
-    }
-
-    .container{
-        height: 500px;
-    }
 
 }
-
-@media only screen and (min-width:600px){
-    .navbar{
-        top: 0;
-        width: 5rem;
-        height: 100vh;
-        justify-content: right;
-        
-    }
-
-    .navbar:hover{
-        width:7rem;
-    }
-
-    .navbar:hover .link-text{
-        display:block;
-    }
-
-    .navbar-nav li{
-        margin-bottom:30px;
-    }
-
-}
-
 
 .container{
     display: flex;
     flex-wrap: wrap;
-    float: right;
+   
 }
 
 .container > div{
@@ -142,16 +55,6 @@ body{
     width: 200px;
 }
 
-.mainpage-content{
-    margin-left:100px;
-    margin-top:50px;
-
-}
-
-.creaturespage-content{
-    margin-left:100px;
-    margin-top:50px;
-}
 
 .title{
     font-weight: bold;
@@ -163,9 +66,41 @@ body{
     float: right;
 }
 
+#table{
+    width: 50%;
+    border: 2px solid black;
+}
+
+#table tr{
+    margin-right:5%;
+    border: 2px solid black;
+
+}
 
 
 
 
+@media only screen and (max-width:600px){
+    
+
+    .container{
+        margin-left: 70px;
+    }
+
+    nav h1 {
+        display: none;
+    }
+
+    .col-6{
+        padding-left: 7%;
+    }
+
+} 
 
 
+
+@media only screen and (min-width:600px){
+    .col-6{
+        padding-left: 20%;
+    }
+}
