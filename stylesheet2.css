@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: inline-flex;
+    text-align: center;
+    margin: 0;
+    box-shadow: 2px 2px 8px black;
+    height: 80px;
+    width: 100%;
+    color: black;
+    padding-top: 15px;
+    padding-left: 25px;
+    z-index: 99;
+}
+
+#index {
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image: url('hogwarts.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer {
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    max-width: 50vw;
+    box-shadow: 2px 2px 8px black;
+}
+
+.text {
+    text-align: center;
+    font-size: larger;
+    color: black;
+}
+
+nav {
+    background-color: goldenrod !important;
+    box-shadow: 2px 2px 8px black;
+    min-height: 80px;
+    z-index: 99;
+}
+
+#futureChanges {
+    margin-top: 50px;
+}
+
+#horcruxesTable {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.gridcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+}
+
+#table {
+    width: 50%;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width:600px) {
+    .container {
+        margin-left: 70px;
+    }
+    nav h1 {
+        display: none;
+    }
+    .col-6 {
+        padding-left: 7%;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .col-6 {
+        padding-left: 20%;
+    }
+}

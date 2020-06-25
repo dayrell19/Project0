@@ -1,0 +1,19 @@
+$backgroundcolor: lightgoldenrodyellow;
+
+%styletr{
+    margin-right: 5%;
+    border: 2px solid black;
+}
+
+body{
+    background-color: $backgroundcolor; 
+}
+
+#table{
+    tr{
+        @extend %styletr;
+    }
+}
+
+
+
